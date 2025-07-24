@@ -1,0 +1,6 @@
+*.tfstate
+terraform.tfstate.backup
+terra-key-ec2
+provider.tf
+.terraform
+.terraform.lock.hcl
