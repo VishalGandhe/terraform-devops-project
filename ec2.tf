@@ -2,7 +2,7 @@
 #key pair (login)
 
 resource  aws_key_pair my_key {
-    key_name = "terra-key-ec2"
+    key_name = "${var.env}-terra-key-ec2"
     public_key = file("terra-key-ec2.pub")
 }
 
@@ -58,7 +58,7 @@ resource aws_security_group  my_security_group  {
     }
 
     tags = {
-        Name= "automate-sg"
+        Name= "${var.env}-automate-sg"
     }
 }
 
@@ -89,6 +89,7 @@ resource "aws_instance" "my_instance" {
     tags = {
       
       Name= each.key
+        Environment = var.env
 
     }
 
