@@ -21,7 +21,7 @@ variable "ec2_ami_id" {
 
 variable "env" {
   description = "Environment for the EC2 instances"
-  default     = "dev"
+  default     = "prod"
   type        = string
   
 }
