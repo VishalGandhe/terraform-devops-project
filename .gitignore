@@ -4,3 +4,4 @@ terra-key-ec2
 provider.tf
 .terraform
 .terraform.lock.hcl
+.terraform/
