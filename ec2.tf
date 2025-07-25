@@ -68,7 +68,7 @@ resource "aws_instance" "my_instance" {
 
     for_each = tomap({
 
-        terra-server-automate-micro = "t2.micro"
+       
         terra-server-automate-medium = "t2.medium"
         terra-server-automate-small = "t2.small"
     }) # mete argument
